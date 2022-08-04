@@ -48,8 +48,8 @@ dataset:
       parsing_root: "datasets/segs"
       same_rate: 50
     dataloader:
-      batch_size: 16
-      num_workers: 32
+      batch_size: 4
+      num_workers: 4
       drop_last: True
       shuffle: True
 
