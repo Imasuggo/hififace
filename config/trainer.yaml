@@ -1,5 +1,5 @@
 checkpoint:
-  save_dir: "/"
+  save_dir: "checkpoint"
   callback:
     monitor: "validation / g_loss"
     save_top_k: -1
