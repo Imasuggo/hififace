@@ -48,16 +48,16 @@ dataset:
       parsing_root: "datasets/segs"
       same_rate: 50
     dataloader:
-      batch_size: 4
-      num_workers: 4
+      batch_size: 8
+      num_workers: 8
       drop_last: True
       shuffle: True
 
   validation:
     target: "dataset.HifiFaceParsingValDataset"
     params:
-      img_root: "/"
-      parsing_root: "/"
+      img_root: "datasets/imgs"
+      parsing_root: "datasets/segs"
     dataloader:
       batch_size: 1
       shuffle: False
