@@ -44,8 +44,8 @@ dataset:
   train:
     target: "dataset.HifiFaceParsingTrainDataset"
     params:
-      img_root: "/"
-      parsing_root: "/"
+      img_root: "datasets/imgs"
+      parsing_root: "datasets/segs"
       same_rate: 50
     dataloader:
       batch_size: 16
