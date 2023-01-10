@@ -44,21 +44,21 @@ dataset:
   train:
     target: "dataset.HifiFaceParsingTrainDataset"
     params:
-      img_root: "datasets/imgs"
-      parsing_root: "datasets/segs"
+      img_root: "data/img"
+      parsing_root: "data/seg"
       same_rate: 50
     dataloader:
-      batch_size: 8
-      num_workers: 8
+      batch_size: 4
+      num_workers: 1
       drop_last: True
       shuffle: True
 
   validation:
     target: "dataset.HifiFaceParsingValDataset"
     params:
-      img_root: "datasets/imgs"
-      parsing_root: "datasets/segs"
+      img_root: "data/img"
+      parsing_root: "data/seg"
     dataloader:
       batch_size: 1
       shuffle: False
-      num_workers: 8
+      num_workers: 1
