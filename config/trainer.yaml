@@ -1,10 +1,8 @@
 checkpoint:
   save_dir: "checkpoints"
   callback:
-    monitor: "validation / g_loss"
-    save_top_k: -1
     verbose: True
-    every_n_train_steps: 2000
+    every_n_train_steps: 10000
 
 wandb:
   project: "hififace"
@@ -12,7 +10,7 @@ wandb:
 
 trainer:
   gradient_clip_val: 0
-  max_epochs: 1000
+  max_epochs: 100000
   num_sanity_val_steps: 1
   fast_dev_run: False
   progress_bar_refresh_rate: 1
