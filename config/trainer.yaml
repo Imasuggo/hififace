@@ -2,7 +2,7 @@ checkpoint:
   save_dir: "checkpoints"
   callback:
     verbose: True
-    every_n_train_steps: 10000
+    every_n_train_steps: 5000
 
 wandb:
   project: "hififace"
