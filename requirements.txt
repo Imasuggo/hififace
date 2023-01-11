@@ -10,6 +10,6 @@ kornia==0.5.5
 
 pytorch-lightning==1.4.5
 omegaconf
-wandb
+wandb==0.13.7
 
 lpips
